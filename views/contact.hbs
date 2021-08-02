@@ -1,0 +1,59 @@
+<div class="contentprofile">
+    <div>
+        <h3 style="color: black;text-align: center;">CONTACT ME!</h3>
+        <strong><hr style="border: 2px solid black;"></strong>
+    </div>
+    <div class="row">
+        <div class="column2" style="float: left;">
+            <div style="padding-left: 10%;padding-right: 10%;">
+                <h4 style="color: black;">Getting in touch is easy!</h4>
+                <p style="height: 60px;">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas and opportunities.</p>
+                <p style="color: rgb(88, 88, 88);height: 60px;">Need Help?</br><i style="text-decoration: underline;color:black">kthakor8445@conestogac.on.ca</i></p>
+                <p style="color: rgb(88, 88, 88);">Call me on:</br><i style="color:black">(647)-123-1608</i></p>
+            </div>  
+        </div>
+        <div class="column2">
+                <fieldset>
+                    
+                    <div class="form-group">
+                    <input type="text" class="form-control" id="name"  placeholder="Enter Your Name" />
+                    </div>
+                    </br>
+                    <div class="form-group">
+                    <input type="email" class="form-control" id="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="abc@gmail.com" />
+                    </div>
+                    </br>
+                    <div class="form-group">
+                    <textarea class="form-control" id="comment" id="exampleTextarea" rows="3" placeholder="Enter your message here..." ></textarea>
+                    </div></br>
+                    <label style="color: red;" id="error" for="error"></label></br>
+                    <input type="submit" onclick="myFunction()" name="submit" class="btn btn-primary"/>
+                </fieldset>
+        </div>
+    </div>
+</div>
+<script>
+//The function will check when click on button that field are empty or not and display according to that.
+    function myFunction()
+    {
+        if(document.getElementById("email").value=="" || document.getElementById("name").value=="" || document.getElementById("comment").value=="")
+        {
+            document.getElementById("error").innerHTML="All Fields must be Required!!";
+        }
+        else{
+            document.getElementById("error").innerHTML="";
+            document.getElementById("email").value="";
+            document.getElementById("name").value="";
+            document.getElementById("comment").value="";
+            alert("Messaged Sent Successfully!!");
+        }
+    }
+
+    //This is css for navigation bar 
+document.getElementById("contact").style.color="white";
+document.getElementById("home").classList.remove("active");
+document.getElementById("projects").classList.remove("active");
+document.getElementById("about").classList.remove("active");
+
+
+</script>

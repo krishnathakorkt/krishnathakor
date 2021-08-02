@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Krishna</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!--Add Icon Library from cloudflare.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Yeti Bootstrap Theme From bootswatch.com -->
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css'/>
+    <link rel='stylesheet' href='/stylesheets/footer.css'/>
+<!-- Bootstrap4 navbar from w3schools https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp
+-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> <img class="img_kishu" src="/images/kishu.jpeg" alt="Krishna" style="width:40px;height: 40px;"/></a>
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="/" id="home">Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/projects" id="projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact" id="contact">Contact Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about" id="about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  </head>
+  <body>
+    {{{body}}}
+<script>
+// Get the container element
+var btnContainer = document.getElementById("navbarColor02");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("nav-link");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[i].className = current[i].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+  </body>
+  </br>
+  <footer>
+    <div class="footer">
+      <div class="footer-center">
+        <div class="row">
+          <div class="column">
+            <!--Class from fontawesom -->
+            <i class="fa fa-map-marker"></i>
+            <p><span>Waterloo</span> ON, Canada</p>
+          </div>
+          <div class="column">
+          <i class="fa fa-phone"></i>
+          <p>+1 (647)-123-1608</p>
+          </div>
+          <div class="column">
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:kthakor8445@conestogac.on.ca">kthakor8445@conestogac.on.ca</a></p>
+          </div>
+        </div>
+        <div style="text-align: center;">
+            <p>Hello, This is my new Website. I am freelance worker in Waterloo, Ontario, CANADA.
+              I am currently studying at Conestoga College. I learned many programming languages such as C, C++, C#, ASP.NET, Java, 
+              Android, Php, DBMS. This website contains information about my studies and work which i did in past years. You can share you comments, 
+              thoughts, work or any opportunities with me. I'll be happy to know your thoughts about my website. Thank you.
+            </p>
+        </div>
+        <hr>
+        <div style="text-align: center;">
+          <p style="font-family: cursive;font-size: 50px;">Follow me on</p>
+          <a href="https://twitter.com/KrishnaThakorK" target="_blank"><i class="fa fa-twitter"></i></a>  
+          <a href="https://www.linkedin.com/in/krishna-thakor-1a67b01aa/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/krishnathakorkt" target="_blank"><i class="fa fa-github"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <p>copyright @2021</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
+          
